@@ -2,10 +2,10 @@ $( document ).ready(function() {
   // user section
     $('.header--nav--user').hide();
     $( "#user" ).hover(function() {
-      $('.header--nav--user').show();
+      $('.header--nav--user').fadeIn();
     });
     $("div:not(#user, .header--nav--user)").hover(function() {
-      $('.header--nav--user').hide();
+      $('.header--nav--user').fadeOut();
     });
   // scroll to
     $('.scrollTo').click( function() {
