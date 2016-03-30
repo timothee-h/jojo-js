@@ -71,6 +71,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/desktop.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58593,
+		"inputAbbreviatedPath": "\/img\/desktop.png",
+		"outputAbbreviatedPath": "\/img\/desktop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/search.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
