@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>JojoJS | Apprendre le JS en s'amusant</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="header--logo" href="index.html">
+      <h2>Jojo</h2>
+    </a>
+    <nav class="header--nav">
+      <ul>
+        <li><a id="current" href="#">Accueil</a></li>
+        <li><a href="#">Cours</a></li>
+        <li><a href="#">Exercices</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a id="user" href="#"><i class="fa fa-user"></i></a></li>
+      </ul>
+      <div class="header--nav--user">
+        <input class="header--nav--user--pseudo" type="texte" name="pseudo" placeholder="Pseudo">
+        <input class="header--nav--user--password" type="password" name="password" placeholder="Mot de passe">
+        <button class="btn--reverse header--nav--user--btn" type="button" name="button">Connexion</button>
+      </div>
+    </nav>
+    <span id="btn-nav" class="header--nav--btn">
+      <span class="header--nav--btn--line"></span>
+    </span>
+  </header>
+  <!--banner primary-->
+  <div id="cover" class="banner--primary">
+    <div class="banner--primary--top">
+      <h1 class="banner--primary--top--title"><span class="banner--primary--top--title--typo">Jojo </span>JS</h1>
+      <p class="banner--primary--top--txt">
+        Faire du Javascript un atout pour votre évantail de compétences
+      </p>
+      <a href="#" class="btn banner--primary--btn">Apprendre</a>
+    </div>
+    <div class="banner--primary--bottom">
+      <p class="banner--primary--bottom--txt">
+        Découvrir le pourquoi du comment
+      </p>
+      <a href="#principle" class="scrollTo banner--primary--bottom--arrow">
+        <i class="fa fa-angle-down"></i>
+      </a>
+    </div>
+  </div>
+  <!--principle of jojo JS-->
+  <section id="principle" class="principle">
+    <div class="container">
+      <div class="row">
+        <div class="principle--item col-sm-4">
+          <span class="principle--item--number">1</span>
+          <h2 class="principle--item--title">lorem ipsum dolor</h2>
+          <p class="principle--item--txt">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis suscipit natus libero quas harum natus libero quas harum
+          </p>
+        </div>
+        <div class="principle--item col-sm-4">
+          <span class="principle--item--number">2</span>
+          <h2 class="principle--item--title">lorem ipsum dolor</h2>
+          <p class="principle--item--txt">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis suscipit natus libero quas harum natus libero quas harum
+          </p>
+        </div>
+        <div class="principle--item col-sm-4">
+          <span class="principle--item--number">3</span>
+          <h2 class="principle--item--title">lorem ipsum dolor</h2>
+          <p class="principle--item--txt">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis suscipit natus libero quas harum natus libero quas harum
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--exo of jojo JS-->
+  <section class="exo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="exo--item--1" href="#">
+            <div class="exo--item--1--content">
+              <h3 class="exo--item--1--content--title">Reflexion algorithmique</h3>
+              <a href="#" class="btn exo--item--1--content--btn">Découvrir</a>
+            </div>
+          </div>
+          <div class="exo--card--1">
+            <span class="exo--card--1--close">
+              <span class="exo--card--1--close--line"></span>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="exo--item--2" href="#">
+            <div class="exo--item--2--content">
+              <h3 class="exo--item--2--content--title">Trouvez l'erreur</h3>
+              <a href="#" class="btn exo--item--2--content--btn">Découvrir</a>
+            </div>
+          </div>
+          <div class="exo--card--2">
+            <span class="exo--card--2--close">
+              <span class="exo--card--2--close--line"></span>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="exo--item--3" href="#">
+            <div class="exo--item--3--content">
+              <h3 class="exo--item--3--content--title">Débuguez</h3>
+              <a href="#" class="btn exo--item--3--content--btn">Découvrir</a>
+            </div>
+          </div>
+          <div class="exo--card--3">
+            <span class="exo--card--3--close">
+              <span class="exo--card--3--close--line"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <p class="footer--left">
+      jojo-js.fr Copyright tous droits reservés
+    </p>
+    <p class="footer--right">
+      <a class="footer--right--item" href="#">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a class="footer--right--item" href="#">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a class="footer--right--item" href="#">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a class="footer--right--item" href="#">
+        <i class="fa fa-github"></i>
+      </a>
+    </p>
+  </footer>
+  <!--script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="js/min/app-min.js"></script>
+</body>
+</html>
