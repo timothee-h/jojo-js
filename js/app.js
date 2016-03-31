@@ -4,7 +4,7 @@ $( document ).ready(function() {
     $( "#user" ).hover(function() {
       $('.header--nav--user').fadeIn();
     });
-    $("div:not(#user, .header--nav--user)").hover(function() {
+    $("div:not(#user, .header--nav--user),section:not(#user, .header--nav--user)").hover(function() {
       $('.header--nav--user').fadeOut();
     });
   // scroll to
@@ -58,4 +58,6 @@ $( document ).ready(function() {
   $(".exo--card--3--close").click(function() {
     $('.exo--card--3').fadeOut();
   });
+  //parallax
+  $('.banner--primary').parallax("50%", 0.2);
 });
