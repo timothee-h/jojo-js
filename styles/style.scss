@@ -155,6 +155,12 @@ $duration: 0.3s;
         }
       }
     }
+    &--sub {
+      li {
+        a {
+        }
+      }
+    }
     &--user {
       position: absolute;
       right: 30px;
@@ -453,9 +459,6 @@ $duration: 0.3s;
 
 \*==================================*/
 
-
-
-
 .clear{
   clear: both;
 }
@@ -463,8 +466,7 @@ $duration: 0.3s;
 /*****************/
 /****page2********/
 /*****************/
-
-h3{
+.manoTitle {
   font-family: 'Pacifico', cursive;
   margin: 0;
   color: #f1c40f;
@@ -503,8 +505,6 @@ h3{
   border-bottom-left-radius: 50px;
 }
 
-
-
 #reponseP2{
   position: relative;
   margin-top: 50px;
@@ -514,9 +514,6 @@ h3{
   float: right;
 }
 
-
-
-
 #blockReponseP2{
   position: absolute;
   background-color: white;
@@ -525,7 +522,7 @@ h3{
   bottom: 20px;
   left: 3%;
   padding: 10px;
-  border: 1px solid #bdc3c7; 
+  border: 1px solid #bdc3c7;
 }
 
 #valideP2{
@@ -539,11 +536,9 @@ h3{
 
 }
 
-
 /*****************/
 /****page3********/
 /*****************/
-
 
 
 #enonceP3{
@@ -577,7 +572,6 @@ h3{
    border: 2px solid #f1c40f;
 }
 
-
 #blocksolutionP3{
   position: absolute;
   background-color: white;
@@ -586,7 +580,7 @@ h3{
   bottom: 20px;
   left: 3%;
   padding: 10px;
-  border: 1px solid #bdc3c7; 
+  border: 1px solid #bdc3c7;
 }
 
 #reponseP3{
@@ -597,7 +591,6 @@ h3{
    border: 2px solid #f1c40f;
 }
 
-
 #blockReponseP3{
   position: absolute;
   background-color: white;
@@ -606,7 +599,7 @@ h3{
   bottom: 20px;
   left: 3%;
   padding: 10px;
-  border: 1px solid #bdc3c7; 
+  border: 1px solid #bdc3c7;
 }
 
 #valideP3{
@@ -620,12 +613,9 @@ h3{
 
 }
 
-
-
 #template2{
   display: none;
 }
-
 
 .footer{
   margin-top: 100px;
