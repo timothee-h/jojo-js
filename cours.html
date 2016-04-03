@@ -34,7 +34,331 @@
     </span>
   </header>
   <!--Content-->
+<div class="container-fluid">
+      <div class="row">
+        <div id="menuCour" class="col-md-12 col-sm-12">
+          <ul>
+            <li><p class="titreMenuCour">Introduction au Java Script</p>
 
+              <ul class="sousMenu">
+                <li><p class="titreSousMenu">Avant de commencer</p>
+                  <ul class="ContenuCour">
+                    <li><p>Avant de commencer, précisons que le JavaScript est un langage de programmation script, orienté objet, qui est responsable des différents comportements de la page web. 
+                      L'intérêt des scripts est sans doute leur manière d'être utilisés : en effet, ils ne sont pas obligatoirement exécutés au chargement de la page. Ils sont lancés lorsqu'un événement spécifique se produit.<br>
+                      Rappelons en effet que le HTML sert à insérer le contenu, la structure; le CSS permet de mettre en page le tout; le JS quand à lui permet de créer des animations et de créer des interactions avec l’utilisateur.</p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">Comment insérer du JavaScript</p>
+                  <ul class="ContenuCour">
+                    <li><p>
+                      Il y a deux façons d’insérer du JavaScript :<br>
+                      - en l’insérant à n’importe quel endroit d’une page en intégrant <br>
+                      &lt;script type=« text/javascript » &gt;<br>
+                      //Code JavaScript<br>
+                      &lt;/script&gt;<br>
+                      -  en créant et en appelant un fichier extérieur<br>
+                      &lt;script type="text/javascript"<br> src="chemin_du_fichier"&gt; &lt;/script&gt;<br>
+
+                      // Permet d’écrire un commentaire sur une ligne <br>
+                      /* permet d’écrite un commentaire
+                      sur plusieurs lignes */
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><p class="titreMenuCour">Les débuts</p>
+              <ul class="sousMenu">
+                <li><p class="titreSousMenu">Les commentaires</p>
+                  <ul class="ContenuCour">
+                    <li><p>	Afin de commencer avec de bonnes bases, habituons-nous dès à présent à utiliser des commentaires afin de faciliter la compréhension du code. Il faut savoir l’utiliser à bon escient.<br>
+
+                      // Permet d’écrire un commentaire sur une ligne <br>
+                      /* permet aussi d’écrire un commentaire sur une ligne */<br>
+                      /* ou 
+                      sur 
+                      plusieurs 
+                      lignes */</p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">Les variables</p>
+                  <ul class="ContenuCour">
+                    <li><p>	
+                      Pour déclarer une variable rien de plus simple : <br>
+                      var nom;<br>
+                      Pour affecter une valeur à une variable : <br>
+                      var age;<br>
+                      age = 18<br>
+                      Il est aussi possible d’affecter immédiatement une valeur, c’est à dire initialiser la variable : <br>
+                      var age = 18<br>
+                      Pour une variable message, on utilise des guillemets afin de l’ordinateur puisse délimiter le début et la fin de notre texte :<br>
+                      var bonjour = « Salut Jojo, comment vas-tu ? »<br>
+                      Il y  a plusieurs types de variables :<br> 
+                      String —> Chaines de caractères <br>
+                      Int —> nombres<br>
+                      Float —> Nombres décimaux<br>
+                      Bool —> True or false<br>
+                      Array —> Tableau</p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">La concaténation</p>
+                  <ul class="ContenuCour">
+                    <li><p>Nous avons la possibilité d’afficher le nombre de frères de soeurs de l’utilisateur en mettant bout à bout trois chaines de caractères :<br>
+
+                      var poisson = 2; // on cree la variable pour pouvoir tester<br>
+                      alert(« ‘Vous avez’ + poisson + ‘poissons »); // on affiche les chaines mises bout-à-bout</p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">Demander une chaîne de caractère au visiteur</p>
+                  <ul class="ContenuCour">
+                    <li><p>Nous pouvons également demander directement l’âge du visiteur en utilisant « prompt » : <br>
+                      var age = prompt(« Combien de poissons avez-vous ?"); <br>// on demande le nombre de poissons<br>
+                      alert("Vous avez " + poisson + "poissons");          <br>// on affiche la phrase</p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">Les variables sur les nombres</p>
+                  <ul class="ContenuCour">
+                    <li><p>Sachez qu’il est possible de convertir une chaine de caractères en nombre ! Et cela grâce aux types de variables que nous avons vu précédemment : <br>
+                      parseInt(chaine_a_convertir) (convertir en un nombre entier) <br>
+                      parseFloat(chaine_a_convertir) (convertir en un nombre décimal).<br>
+
+                      JavaScript nous permet aussi de calculer ! <br>
+                      Voici comment réaliser des opérations : <br>
+                      Les opérateurs arithmétiques : +, -, /, *,%<br>
+                      L'opérateur de concaténation : + (pour les strings)<br>
+                      Les opérateurs de comparaisons : &lt;, &gt;, ==, &lt;=, &gt;=, !=, ===<br>
+                      Les opérateurs logiques : &&, ||<br>
+
+                      Exemple : <br>
+                      var i = 50;<br>
+                      var j = 10;<br>
+                      var z = i + j;<br>
+                      document.write(z);<br>
+                      document.write("le nombre est : " + z );</p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">La console </p>
+                  <ul class="ContenuCour">
+                    <li><p>
+                      <br>
+                      La console permet d’afficher les erreurs JS ainsi que certaines informations.<br>
+
+                      Pour s’en servir : <br>
+
+                      var z=10;<br>
+                      console.log(z);</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><p class="titreMenuCour">Les fonctions</p>
+              <ul class="sousMenu">
+                <li><p class="titreSousMenu">Les fonctions sur les nombres</p>
+                  <ul class="ContenuCour">
+                    <li><p>
+
+
+                      Quelques fonctions sur les nombres :<br> 
+                      Math.ceil : retourne l’entier supérieur ou égal au paramètre.<br>
+                      Math.floor: retourne l’entier inférieur ou égal au paramètre.<br>
+                      Math.min: retourne le plus petit de paramètres.<br>
+                      Math.round: retourne l’entier arrondi le plus proche.<br>
+                      Math.abs : retourne la valeur absolue.<br>
+                      Math.random: retourne une valeur aléatoire compris entre 0 et 1 (pas de paramètre)<br>
+
+                      Exemples :<br>
+                      Math.abs(-5.6);<br>
+                      Math.ceil(5.6);<br>
+                      Math.floor(5.6);<br>
+                      Math.floor(-10.3);<br>
+                      Math.round(5.6);<br>
+                      Math.round(5.3);<br>
+                      Math.max(10, 5.1, 4);</p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">Les fonctions sur les chaines</p>
+                  <ul class="ContenuCour">
+                    <li><p>Une fonction est une suite d'instructions ayant un rôle précis. 
+                      Afin de pourvoir l’appliquer, il faut d’abord déclarer et appliquer la fonction, c’est indispensable : <br>
+                      function essai()<br>
+
+                      On fait suivre cette déclaration du contenu de la fonction (es instructions de celle-ci).<br>
+                      S'il y a plusieurs instructions, on délimite le contenu de notre fonction grâce à des accolades { et } : <br>on forme alors ce qu'on appelle un bloc d'instructions.<br>
+                      length<br>
+                      Calculer la longueur d’une chaîne : length<br>
+                      var txtAccueil=« Bonjour";<br>
+                      var longueurTxt=txtAccueil.length;<br>
+
+                      charAt()<br>
+                      Accès à un caractère d’une chaîne : charAt()<br>
+                      var txtAccueil="Bonjour";<br>
+                      var lettre=txtAccueil.charAt(3); //j<br>
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">Les fonctions sur les chaines suite</p>
+                  <ul class="ContenuCour">
+                    <li><p>
+                      substring()<br>
+                      Extraire d’une chaîne de caractère : substring()<br>
+                      chaine.substring(debut,fin)<br>
+                      chaine.substring(3) -> du 4 ème caractère à la fin<br>
+
+                      substr()<br>
+                      Extraction d’une chaîne de caractère : substr ()<br>
+                      chaine.substr(debut,nombre de caractère à inclure)<br>
+                      lastIndexOf()<br>
+                      Recherche du dernier caractère dans une chaîne : lastIndexOf ()<br>
+                      Chaine.lastIndexOf(Recherche)<br>
+                      Renvoie la dernière position du caractère ou -1<br>
+
+                      indexOf()<br>
+                      Recherche d’un caractère dans une chaîne : indexOf ()<br>
+                      Chaine.indexOf(Recherche,depart)<br>
+                      Renvoie la prochaine position du caractère ou -1
+                      Le paramètre depart facultatif.<br>
+
+                      Conversion en majuscules : toUpperCase();<br>
+                      Conversion en minuscules : toLowerCase();<br>
+
+                      Split() : coupe une chaine en fonction d’un séparateur.</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><p class="titreMenuCour">Les tableaux</p>
+              <ul class="sousMenu">
+                <li><p class="titreSousMenu">Les tableaux</p>
+                  <ul class="ContenuCour">
+                    <li><p>Un tableau permet de stocker des données. C’est idéal pour stocker les informations lorsqu’elles deviennent nombreuses.<br>
+
+                      Un tableau s’enregistre dans une variable.<br> Pour créer un tableau, on utilise new Array().<br>
+                      Donc var jour = new Array();<br>
+
+                      Pour initialiser un tableau on utilise les parenthèses après Array, en précisant dans l'ordre, et en les séparant par des virgules, les valeurs de notre tableau.<br>
+
+                      var jours = new Array ("Lundi", "Mardi",  "Mercredi", "Jeudi", "Vendredi",  "Samedi",  « Dimanche »);</p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">Parcourir un tableau</p>
+                  <ul class="ContenuCour">
+                    <li><p>
+                      Pour accéder à un élément, on utilise tableau[indice].<br>
+                      Pour ajouter un nouvel élément, on modifie simplement sa valeur.<br>
+
+                      var jours = new Array ("Lundi", "Mardi",  "Mercredi", "Jeudi", "Vendredi",  "Samedi");
+                      alert("La première case vaut : " + table[1]);<br>   // on lit l'element d'indice 1 qui est Mardi
+                      table[2] = "Meduse";   // on le modifie<br>
+                      table[6] = "Dimanche";   // on crée un nouvel élément<br>
+
+                      Pour ajouter deux tableaux on utilise la fonction suivante : <br>
+                      var joursDebut = new Array ("Lundi", "Mardi", "Mercredi", "Jeudi");<br>
+                      var joursFin = new Array ("Vendredi",  "Samedi",  "Dimanche");<br>
+                      var joursSemaine = joursDebut.concat(joursFin);<br>
+                      var joursSemInvers = joursFin.concat(joursDebut);<br>
+
+                      Pour connaître la longueur d’un tableau on utilise monTableau.length<br>
+
+                      Pour lire un tableau, on procède de la façon suivante :<br>
+                      function moyenne(tableau)
+                      {<br>
+                      var n = tableau.length;   // nombre de valeurs<br>
+                      var somme = 0;<br>
+                      for(i=0; i &lt; n; i++)<br>
+                      somme += tableau[i];<br>
+                      return somme/n;   // somme divisee par le<br> nombre de valeurs<br>
+                      }
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">titre</p>
+                  <ul class="ContenuCour">
+                    <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla blanditiis eius provident rerum distinctio iusto autem, nisi laboriosam nemo, accusantium animi qui et hic delectus aperiam doloremque magni voluptatem neque?</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><p class="titreMenuCour">Le DOM et sa manipulation</p>
+              <ul class="sousMenu">
+                <li><p class="titreSousMenu">Le DOM</p>
+                  <ul class="ContenuCour">
+                    <li><p>On parle souvent du DOM (Document Object Model) en javascript mais plus souvent de sa manipulation. En effet la manipulation du DOM permet de changer le contenu ou/et l’affichage de la page HTML en fonction des actions de l’utilisateur. Cela se passe en plusieurs étapes.<br>
+
+                      Dans un premier temps il faut récupérer le noeud html sur lequel on veut agir. Pour cela il existe plusieurs commandes en javascript. <br>
+
+                      document.getElementById(“monIdentifiant”) qui permet de récupérer un élément avec son ID, ici l’id : monIdentifiant.<br>
+                      <br>
+                      document.querySelector(“#monIdentifiant”) qui permet de récupérer le premier élément ayant la class ou identifiant donnée, ici l’identifiant : monIdentifiant. ATTENTION avec le .querySelector, il faut respecter la syntaxe CSS. Ainsi ne pas oublier le “.” pour les class et le “#” pour les identifiants.<br>
+                      <br>
+                      document.querySelectorAll(“.mesClass”) qui permet de récupérer l’ensemble des éléments ayant la class donnée, ici la class : mesClass. ATTENTION le résultat de la selection de l’ensemble des éléments aura pour résultat un tableau javascript. Ainsi il faudra dans la plupart des cas utiliser une boucle et une incrémentation pour appliquer nos transformations à chaque élément ayant cette même classe.<br>
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">Manipulation css</p>
+                  <ul class="ContenuCour">
+                    <li><p>Une fois nos éléments sélectionnés généralement dans une variable prédéfinie, par exemple : var annonceModulaire = document.querySelector(“#welcomeTitle”), nous allons voir quelles propriétés nous allons pouvoir lui attribuer : <br>
+
+                      Ajouter/Changer une propriété CSS à un élément : pour changer une propriété css, nous allons utiliser le .style auquel nous rajouterons la propriété sur laquelle nous souhaitons agir par exemple sa couleur avec le .color. Une fois la propriété sélectionnée, pour rentrer un paramètre il faut respecter la syntaxe suivante<br>
+                      noeud.style.propriete =”parametre”;  
+                      Ainsi ici pour changer la couleur, en rouge par exemple, de mon élément précédemment annoncé j’écrirais ceci :<br>
+                      annonceModulaire.style.color=”red”;<br>
+
+                      ATTENTION les propriétés contenant des “-” doivent être remplacées par leur équivalent en camelCase, par exemple la propriété : background-color devient backgroundColor.<br>
+
+                      N’indiquer aucun paramètre à la proprieté a pour but de retourner le parametre/valeur de cette propriété. Par exemple :<br> console.log(annonceModulaire.style.color)<br> retournera la couleur de l’élément de la variable annonceModulaire à savoir l’élément ayant l’identifiant #welcomeTitle.</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                </li>
+                <li><p class="titreSousMenu">Manipulation HTML</p>
+                  <ul class="ContenuCour">
+                    <li><p>Pour la plupart des actions nous utiliserons le .innerHTML<br>
+
+                      En effet pour retourner le contenu HTML d’un élément, dans la console par exemple, procéderons ainsi <br>
+                      console.log(annonceModulaire.innerHTML);<br>
+                      Pour modifier le contenu
+                      annonceModulaire.innerHTML=”Nouveau contenu”;<br>
+
+                      ATTENTION si vous souhaitez inscrire des balises de code HTML veillez à utiliser au sein de vos “” des ‘’ afin d'éviter toute fermeture non voulue du paramètre. Par exemple<br>
+
+                      annonceModulaire.innerHTML=” &lt;p class=”description”>Notre description &lt;/p&gt;”;<br>
+                      annonceModulaire.innerHTML=” &lt;p class=’description’>Notre description &lt;/p&gt;”;<br></p>
+                    </li>
+                  </ul>
+                </li>
+                <li><p class="titreSousMenu">Remarques</p>
+                  <ul class="ContenuCour">
+                    <li><p>
+                      <br>
+                      L’utilisation du DOM est généralement effectuée dans des fonctions déclenchées par des événements (exemple : au clic, au survol).<br>
+                      <br>Privilégier la stylisation de vos éléments par votre page CSS au possible<br>
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="courContent"></div>
+      </div>
+    </div>
 
   <!--footer-->
   <footer class="footer">
