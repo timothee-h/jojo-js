@@ -3,7 +3,7 @@ $(document).ready(function(){
   $("[id^='valideP']").on("click",function(e){ 
 		//console.log("valide");
     $( "#template1").css( "display", "none");
-    $( "#template2").css( "display", "block");
+    $( "#template2").fadeIn();
   });
 
 	

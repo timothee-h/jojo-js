@@ -463,9 +463,9 @@ $duration: 0.3s;
   clear: both;
 }
 
-/*****************/
-/****page2********/
-/*****************/
+/*************************/
+/****page réponse********/
+/***********************/
 .manoTitle {
   font-family: 'Pacifico', cursive;
   margin: 0;
@@ -489,7 +489,7 @@ $duration: 0.3s;
   height: 400px;
   padding: 10px 10px 25px 10px ;
   margin-top: 100px;
-
+	
 }
 
 #enonceP2 h3{
@@ -536,9 +536,9 @@ $duration: 0.3s;
 
 }
 
-/*****************/
-/****page3********/
-/*****************/
+/**************************/
+/****page solution********/
+/************************/
 
 
 #enonceP3{
@@ -617,6 +617,26 @@ $duration: 0.3s;
   display: none;
 }
 
+#suivant:hover, #valideP2:hover {
+	cursor: pointer;
+	border-color: #f9bf3b;
+	color: #f9bf3b;
+	transition: .2s;
+}
+#suivant, #valideP2 {
+  margin-top: 20px;
+  margin-left: 40%;
+  border-radius: 30px;
+  padding: 5px 100px;
+  background-color: white;
+  border: 2px solid #34495e;
+  text-align: center;
+	transition: .2s;
+}
+
+
 .footer{
   margin-top: 100px;
 }
+
+
