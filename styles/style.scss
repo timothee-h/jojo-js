@@ -471,6 +471,7 @@ $duration: 0.3s;
   margin: 0;
   color: #f1c40f;
   margin-top: 3px;
+  margin-bottom: 3px;
   font-size: 35px;
 
 }
@@ -486,7 +487,7 @@ $duration: 0.3s;
 #enonceP2{
   background-color: white;
   border: 2px solid #f1c40f;
-  height: 400px;
+  height: auto;
   padding: 10px 10px 25px 10px ;
   margin-top: 100px;
 	
@@ -508,22 +509,13 @@ $duration: 0.3s;
 #reponseP2{
   position: relative;
   margin-top: 50px;
-  height: 400px;
+  height: auto;
   background-color: white;
   border: 2px solid #f1c40f;
   float: right;
 }
 
-#blockReponseP2{
-  position: absolute;
-  background-color: white;
-  width: 95%;
-  height: 320px;
-  bottom: 20px;
-  left: 3%;
-  padding: 10px;
-  border: 1px solid #bdc3c7;
-}
+
 
 #valideP2{
   margin-top: 20px;
@@ -566,41 +558,22 @@ $duration: 0.3s;
 #solutionP3{
   position: relative;
   margin-top: 50px;
-  height: 300px;
+  height: auto;
   background-color: white;
   float: right;
    border: 2px solid #f1c40f;
 }
 
-#blocksolutionP3{
-  position: absolute;
-  background-color: white;
-  width: 95%;
-  height: 220px;
-  bottom: 20px;
-  left: 3%;
-  padding: 10px;
-  border: 1px solid #bdc3c7;
-}
+
 
 #reponseP3{
   position: relative;
   margin-top: 50px;
-  height: 300px;
+  height: auto;
   background-color: white;
    border: 2px solid #f1c40f;
 }
 
-#blockReponseP3{
-  position: absolute;
-  background-color: white;
-  width: 95%;
-  height: 220px;
-  bottom: 20px;
-  left: 3%;
-  padding: 10px;
-  border: 1px solid #bdc3c7;
-}
 
 #valideP3{
   margin-top: 20px;
