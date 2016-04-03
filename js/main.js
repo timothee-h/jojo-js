@@ -8,14 +8,9 @@ $(document).ready(function(){
 
 	//Authentification
 	var user = "Inconnu";
-	$(".header--nav--user--btn").on("click", function(){
-		user = $(".header--nav--user--pseudo").val();
-		localStorage.setItem("currentUser", user);
-		location.reload();
-	});
-	
 	user = localStorage.getItem("currentUser");
 	console.log(user +" connecté");
+	$(".header--nav--user--pseudo").val(user);
 	
 	//Récup données
 	if($("#json1").length){//si on est sur la page ex1
@@ -59,7 +54,7 @@ $(document).ready(function(){
 	
 	
 	$("[id^='valideP']").on("click", function(){
-		var reponse = $("#blockReponseP2 p").text();
+		var reponse = $("#reponseP2 p").text();
 		//re-afficher réponse :
 		$("#reponseP3 p").html(reponse);
 		// enregistrer réponse :
