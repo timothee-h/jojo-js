@@ -6,13 +6,23 @@ $(document).ready(function(){
     $( "#template2").fadeIn();
   });
 
+	//Authentification
+	var user = "Inconnu";
+	$(".header--nav--user--btn").on("click", function(){
+		user = $(".header--nav--user--pseudo").val();
+		localStorage.setItem("currentUser", user);
+		location.reload();
+	});
+	
+	user = localStorage.getItem("currentUser");
+	console.log(user +" connecté");
 	
 	//Récup données
 	if($("#json1").length){//si on est sur la page ex1
 		var typeExo = 1;
 		var answers = [];
-		if(localStorage.getItem("answers1") != null) {
-			answers = JSON.parse(localStorage.getItem("answers1"));
+		if(localStorage.getItem(user+"Answers1") != null) {
+			answers = JSON.parse(localStorage.getItem(user+"Answers1"));
 		}
 		var currentExo = answers.length;
 		var data = ex1;
@@ -22,8 +32,8 @@ $(document).ready(function(){
 	if($("#json2").length){
 		var typeExo = 2;
 		var answers = [];
-		if(localStorage.getItem("answers2") != null) {
-			answers = JSON.parse(localStorage.getItem("answers2"));
+		if(localStorage.getItem(user+"Answers2") != null) {
+			answers = JSON.parse(localStorage.getItem(user+"Answers2"));
 		}
 		var currentExo = answers.length;
 		var data = ex2;
@@ -33,8 +43,8 @@ $(document).ready(function(){
 	if($("#json3").length){
 		var typeExo = 3;
 		var answers = [];
-		if(localStorage.getItem("answers3") != null) {
-			answers = JSON.parse(localStorage.getItem("answers3"));
+		if(localStorage.getItem(user+"Answers3") != null) {
+			answers = JSON.parse(localStorage.getItem(user+"Answers3"));
 		}
 		var currentExo = answers.length;
 		var data = ex3;
@@ -56,7 +66,7 @@ $(document).ready(function(){
 		answers[currentExo] = reponse;
 		answersSave = JSON.stringify(answers);
 		console.log(answersSave);
-		localStorage.setItem("answers"+typeExo, answersSave);
+		localStorage.setItem(user+"Answers"+typeExo, answersSave);
 	});
 	
 	
